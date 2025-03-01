@@ -1,7 +1,7 @@
 {
   inputs = {
     flakelight.url = "github:nix-community/flakelight";
-    flakelight-darwin.url = "github:cmacrae/flakelight-darwin";
+    flakelight-darwin.url = "github:rencire/flakelight-darwin";
   };
   outputs = { flakelight, flakelight-darwin, ... }: flakelight ./. {
     imports = [ flakelight-darwin.flakelightModules.default ];
